@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClickActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="52dp"
+        android:clickable="true"
+        android:onClick="orderDonut"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/saveINTBTN" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/click"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginBottom="30dp"
+        android:drawableLeft="@drawable/baseline_camera_alt_24"
+        android:gravity="center"
+        android:pointerIcon="grab"
+        android:text="click"
+        app:layout_constraintBottom_toTopOf="@+id/saveINTBTN"
+        app:layout_constraintStart_toStartOf="@+id/saveEXTBTN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveEXTSDBTN"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginBottom="85dp"
+        android:drawableLeft="@drawable/baseline_save_24"
+        android:gravity="center"
+        android:pointerIcon="grab"
+        android:text="save(ext sd)"
+        app:layout_constraintBottom_toTopOf="@+id/imageView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveEXTBTN"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveINTBTN"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="87dp"
+        android:drawableLeft="@drawable/baseline_download_24"
+        android:gravity="center"
+        android:pointerIcon="grab"
+        android:text="save(int)"
+        app:layout_constraintBottom_toTopOf="@+id/imageView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/click" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveEXTBTN"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginEnd="15dp"
+        android:drawableLeft="@drawable/baseline_drive_file_move_24"
+        android:gravity="center"
+        android:pointerIcon="grab"
+        android:text="save(ext)"
+        app:layout_constraintBaseline_toBaselineOf="@+id/saveINTBTN"
+        app:layout_constraintEnd_toStartOf="@+id/saveEXTSDBTN"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
